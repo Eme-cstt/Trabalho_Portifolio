@@ -641,82 +641,31 @@ section {
     border: 1px solid var(--border-color);
     border-radius: 24px;
     box-shadow: var(--shadow);
+    text-align: center; 
 }
 
-#meuFormulario {
+.info-contato {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px; 
 }
 
-/* ESTILO DO INPUT */
-#meuFormulario input, 
-#meuFormulario textarea {
-    width: 100%;
-    padding: 16px;
-    background: var(--bg-color);
-    border: 2px solid var(--border-color);
-    border-radius: 12px;
-    color: var(--text-primary);
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    outline: none;
-    transition: all 0.3s ease;
+.info-contato p {
+    font-size: 1.1rem;
+    color: var(--text-color); 
 }
 
-#meuFormulario textarea {
-    height: 150px;
-    resize: none; 
-}
-
-/* BOTÃO DE ENVIAR */
-#meuFormulario button {
-    background: var(--accent-color);
-    color: #ffffff;
-    padding: 18px;
-    border: none;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.link-disfarçado {
+    text-decoration: none;
+    color: inherit;       
+    font-weight: 500;    
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
 }
 
-#meuFormulario button:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.2);
-    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.5);
+.link-disfarçado:hover {
+    opacity: 1.0; /* Um efeito sutil ao passar o mouse para saber que é clicável */
 }
-
-#meuFormulario button:active {
-    transform: translateY(0);
-}
-
-/* MENSAGEM DE SUCESSO FORMULARIO */
-#mensagemSucesso {
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 12px;
-    text-align: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.9rem;
-    /* As cores abaixo mudam via tema */
-    background: rgba(34, 197, 94, 0.1);
-    border: 1px solid rgba(34, 197, 94, 0.5);
-    color: #22c55e;
-}
-
-.h7{
-    text-align: center;
-}
-
-
-
-
-
 
 
 
